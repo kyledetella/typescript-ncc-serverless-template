@@ -1,6 +1,12 @@
 # TypeScript ncc serverless Template
 
-Get up and running quickly with TypeScript (via [ncc](https://github.com/zeit/ncc)) + API Gateway + AWS Lambda using the [serverless](https://serverless.com/) framework.
+Quickly bootstrap a [serverless](https://serverless.com) project.
+
+Features:
+
+* TypeScript (compiled using [ncc](https://github.com/zeit/ncc))
+* [Jest](https://jestjs.io/) configured out-of-the-box
+* Local development via [serverless-offline](https://github.com/dherault/serverless-offline)
 
 <details>
 <summary><strong>Table of Contents</strong></summary>
