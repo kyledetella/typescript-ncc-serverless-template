@@ -1,0 +1,26 @@
+# Replace this service name!
+service: ts-serverless-template
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  tracing:
+    lambda: true
+    apiGateway: true
+  environment:
+    NODE_ENV: ${env:NODE_ENV, 'development'}
+
+functions:
+  main:
+    handler: dist/index.main
+    events:
+      - http:
+          path: /
+          method: post
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    port: ${env:PORT, '4144'}
