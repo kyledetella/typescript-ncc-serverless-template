@@ -28,8 +28,6 @@ Inside of your new app directory, run:
 nvm use && npm i
 ```
 
-**Make sure to change the `service` and `name` fields in the `serverless.yml` and `package.json` files!**
-
 ## Development
 
 ### Install dependencies
