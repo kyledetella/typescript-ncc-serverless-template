@@ -8,7 +8,8 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "build": "ncc build src/index.ts -o dist -m -s",
-    "deploy": "npm t && npm run build && NODE_ENV=production npx serverless deploy",
+    "predeploy": "npm t",
+    "deploy": "npm run build && NODE_ENV=production npx serverless deploy",
     "lint": "tslint -c tslint.json './**/*.ts' -t stylish",
     "fmt": "prettier --write \"src/**/*.{json,graphql,ts,yml,md}\""
   },
