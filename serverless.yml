@@ -3,6 +3,7 @@ service: ts-serverless-template
 provider:
   name: aws
   runtime: nodejs10.16
+  env: ${opt:env, self:provider.stage}
   # Use a shared deployment bucket
   # deploymentBucket:
   #   name: "some-bucket"
