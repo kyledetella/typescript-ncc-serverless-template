@@ -4,11 +4,13 @@
   "description": "TypeScript + ncc + serverless template",
   "scripts": {
     "start": "nodemon -e ts --ignore dist --exec 'ncc build src/index.ts -o dist -s && serverless offline'",
+    "clean": "rm -rf dist",
     "pretest": "npm run fmt && npm run lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "rebuild": "npm t",
     "build": "ncc build src/index.ts -o dist -m -s",
-    "predeploy": "npm t",
+    "predeploy": "npm run clean && npm run build",
     "deploy": "npm run build && NODE_ENV=production npx serverless deploy",
     "lint": "tslint -c tslint.json './**/*.ts' -t stylish",
     "fmt": "prettier --write \"src/**/*.{json,ts,yml,md}\""
