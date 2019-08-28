@@ -2,7 +2,12 @@ service: ts-serverless-template
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.16
+  # Use a shared deployment bucket
+  # deploymentBucket:
+  #   name: "some-bucket"
+  logs:
+    restApi: true
   tracing:
     lambda: true
     apiGateway: true
