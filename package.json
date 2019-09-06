@@ -11,7 +11,7 @@
     "rebuild": "npm t",
     "build": "ncc build src/index.ts -o dist -m -s",
     "predeploy": "npm run clean && npm run build",
-    "deploy": "npm run build && NODE_ENV=production npx serverless deploy",
+    "deploy": "NODE_ENV=production npx serverless deploy",
     "lint": "tslint -c tslint.json './**/*.ts' -t stylish",
     "fmt": "prettier --write \"src/**/*.{json,ts,yml,md}\""
   },
