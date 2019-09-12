@@ -8,7 +8,7 @@
     "pretest": "npm run fmt && npm run lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "rebuild": "npm t",
+    "prebuild": "npm t",
     "build": "ncc build src/index.ts -o dist -m -s",
     "predeploy": "npm run clean && npm run build",
     "deploy": "NODE_ENV=production npx serverless deploy",
