@@ -2,11 +2,13 @@
 
 Quickly bootstrap a [serverless](https://serverless.com) project.
 
+This creates a serverless project fronted by API Gateway. For a project with _direct_ invocation, see: [typescript-ncc-serverless-template-direct](https://github.com/kyledetella/typescript-ncc-serverless-template-direct).
+
 Features:
 
-* TypeScript (compiled using [ncc](https://github.com/zeit/ncc))
-* [Jest](https://jestjs.io/) configured out-of-the-box
-* Local development via [serverless-offline](https://github.com/dherault/serverless-offline)
+- TypeScript (compiled using [ncc](https://github.com/zeit/ncc))
+- [Jest](https://jestjs.io/) configured out-of-the-box
+- Local development via [serverless-offline](https://github.com/dherault/serverless-offline)
 
 <details>
 <summary><strong>Table of Contents</strong></summary>
