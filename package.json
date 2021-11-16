@@ -24,7 +24,7 @@
     "@types/jest": "^24.0.18",
     "@types/node": "^10.14.16",
     "@zeit/ncc": "^0.20.4",
-    "aws-sdk": "^2.518.0",
+    "aws-sdk": "^2.814.0",
     "aws-xray-sdk": "^2.3.4",
     "jest": "^24.9.0",
     "nodemon": "^1.19.1",
